@@ -1,1 +1,100 @@
 <h1>Samantha R </h1>
+<!DOCTYPE html>
+
+<head>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+<link href='https://fonts.googleapis.com/css?family=Dhurjati' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<script src="/assets/jquery.js"></script>
+<style>
+body {
+  text-align: center;
+  font-family: 'Dhurjati';
+  font-size: 40px;
+  background: url("https://png.pngtree.com/element_origin_min_pic/16/12/04/023fdf76046fd281170b30256876ad76.jpg");
+  background-size: 74%;
+  background-position: 790px -30px;
+  ;
+
+}
+button { 
+  font-family: 
+  margin: 20px;
+}
+input { 
+  font-size: 30px;
+}
+.fill {
+  background: #BF99F9;
+  color: rgb(24, 26, 142);
+  bborder-bottom: 2px black solid;
+  font-family: 'Lobster';
+  padding: 0 6px;
+  margin: 4px; 
+}
+</style>
+</head>
+
+<body>
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+// List of prompts for the user
+var prompts = [
+	'Type your name',
+	'Type an adjective',
+	'Type a noun',
+	'Type in your name',
+	'Type in noun pluralized',
+	'Type in your gender using her or his',
+	'Type in a friends name',
+	'Type in your name',
+	'Type in a location',
+	'Type the verb tense of your noun: For example, picking flowers, reading books, playing games, etc.',
+	'Enter gender of the you and your friends for example, the girls, the guys or even the two friends.',
+	' Enter an activity'
+   ];
+
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+	// if there is a next prompt
+	if (currentPrompt < prompts.length) {
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	} 
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		showFinal();
+	}
+}
+
+//puts user answers into HTML
+var showFinal = function() {
+  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>. One day <span class="fill">'+answers[3]+'</span> who loved <span class="fill">'+answers[4]+'</span> decided to hang out with <span class="fill">'+answers[5]+'</span> friend.That day <span class="fill">'+answers[6]+'</span> and <span class="fill">'+answers[7]+'</span> were on their way to <span class="fill">'+answers[8]+'</span>. They wanted to be <span class="fill">'+answers[9]+'</span>. The <span class="fill">'+answers[10]+'</span> spent all day <span class="fill">'+answers[11]+'</span>. The End.');
+  //and the hide the button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
+
+// Show the first prompt as soon as js loads
+nextPrompt();
+</script>
+
+</body>
