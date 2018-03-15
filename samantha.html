@@ -1,504 +1,104 @@
 <h1> 
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
 	<meta name="viewport" content="width=device-width"/>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>PnB Rock</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <style>
-  body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
-  p {
-	  font-family: Ubuntu;
-	  color: rgb(188, 186, 219);
-  }
-  h3 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
-      font-size: 40px;
-	  font-family:Coda Caption;
-	  color: black;
-  }
-  h4 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
-      font-size: 20px;
-      color: #111;
-	  font-family:Coda Caption;
-  }
-  .container {
-      padding: 80px 120px;
-  }
-  .person {
-      border: 10px solid transparent;
-      margin-bottom: 25px;
-      width: 80%;
-      height: 80%;
-      opacity: 0.7;
-  }
-  .person:hover {
-      border-color: #f1f1f1;
-  }
-  .carousel-inner img {
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(70%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-  }
-  .carousel-caption h3 {
-      color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-      background: #2d2d30;
-      color: #bdbdbd;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail p {
-      margin-top: 15px;
-      color: #555;
-  }
-  .btn {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #f1f1f1;
-      border-radius: 0;
-      transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-      border: 1px solid #333;
-      background-color: #fff;
-      color: #000;
-  }
-  .modal-header, h4, .close {
-      background-color: #333;
-      color: white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-header, .modal-body {
-      padding: 40px 50px;
-  }
-  .nav-tabs li a {
-      color: #777;
-  }
-  #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }  
-  .navbar {
-      font-family: Coda Caption;
-      margin-bottom: 0;
-      background-color: white;
-      border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
-      opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-      color: black !important;
-  }
-  .navbar-nav li a:hover {
-      color: #fff !important;
-  }
-  .navbar-nav li.active a {
-      color: #fff !important;
-      background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-  }
-  .open .dropdown-toggle {
-      color: #fff;
-      background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-      color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-      background-color: red !important;
-  }
-  footer {
-      background-color: #2d2d30;
-      color: #ffffff;
-      padding: 32px;
-  }
-  footer a {
-      color: #ffffff;
-  }
-  footer a:hover {
-      color: #777;
-      text-decoration: none;
-  }  
-  .form-control {
-      border-radius: 0;
-  }
-  textarea {
-      resize: none;
-  }
-  </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+<link href='https://fonts.googleapis.com/css?family=Dhurjati' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<script src="/assets/jquery.js"></script>
+<style>
+body {
+  text-align: center;
+  font-family: 'Dhurjati';
+  font-size: 40px;
+  background: url("https://png.pngtree.com/element_origin_min_pic/16/12/04/023fdf76046fd281170b30256876ad76.jpg");
+  background-size: 74%;
+  background-position: 790px -30px;
+  ;
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">PnB Rock</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://newlanemerch.com/?intcmp=180124/pnbrock/atl/spl/s_hp/but/ftr/ww/catch-these-vibes-tour-enter-store">Merchandise</a></li>
-            <li><a href="http://pnbrockofficial.com/catchthesevibestour/?ref=https://www.google.com/">Extras</a></li>
-            <li><a href="https://soundcloud.com/pnbrock">Media</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://i.ytimg.com/vi/370fOFODpZ4/maxresdefault.jpg" alt="New York" width="1280" height="720">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>The City That Never Sleeps</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="https://i.ytimg.com/vi/JjWeo8Cz8IY/maxresdefault.jpg" alt="Chicago" width="1280" height="720">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago - A night we won't forget.</p>
-        </div>      
-      </div>
-    
-      <div class="item">
-        <img src="https://i.ytimg.com/vi/NahQKl3z3mg/maxresdefault.jpg" alt="Los Angeles" width="1280" height="720">
-        <div class="carousel-caption">
-          <h3>LA</h3>
-          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
-        </div>      
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>PNB Rock</h3>
-  <p><em>We love music!</em></p>
-  <p>Rakim Hasheem Allen, better known by his stage name PnB Rock, is an American hip hop recording artist from Philadelphia, Pennsylvania.</p>
-  <br>
-  
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Rakim Hasheem Allen</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="https://www.thefamouspeople.com/profiles/images/pnb-rock-1.jpg" class="img-circle person" alt="PNB Rock" width="200" height="100">
-      </a>
-      <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Container (TOUR Section) -->
-<div id="tour" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">TOUR DATES</h3>
-    <p class="text-center">Come enjoy the concert.<br> Get your tickets ASAP!</p>
-    <ul class="list-group">
-      <li class="list-group-item">July <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">August <span class="label label-danger">Limited space, Only 20 tickets left !</span></li> 
-      <li class="list-group-item">September <span class="badge">Tickets still available! </span></li> 
-    </ul>
-    
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="https://fanart.tv/api/download.php?type=download&image=215224&section=2" alt="Paris" width="400" height="300">
-          <p><strong>New York</strong></p>
-          <p>Friday 27 August 2018</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="https://t2.genius.com/unsafe/300x0/https%3A%2F%2Fimages.genius.com%2F52e9b889cdc0f7ac0fce301a53c4994b.1000x1000x1.jpg" alt="New York" width="400" height="300">
-          <p><strong>Chicago</strong></p>
-          <p>Saturday 7 September 2018</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="https://i1.wp.com/pchmcm.com/wp-content/uploads/2017/07/Lil-Bibby-Someday-PnB-Rock-e1499448298903.jpg?resize=1000%2C1000&ssl=1" alt="San Francisco" width="400" height="300">
-          <p><strong>LA</strong></p>
-          <p>Sunday 29 September 2018</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-        </div>
-        <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-			  
-            </div>
-              <button type="submit" class="btn btn-block">Pay 
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
-          </button>
-          <p>Need <a href="#">help?</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>Fans are my inspirtation!</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p>Are you a fan? Write a message.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Pennsylvania, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 123-456-7890</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: PnBRock@gmail.com</p>
-    </div>
-    <div class="col-md-8">
-
-    </div>
-  </div>
-  <br>
-  <h3 class="text-center">From the Supporters</h3>  
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
-    <li><a data-toggle="tab" href="#menu2">Peter</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h2>Mike Ross, Manager</h2>
-      <p>There's so many fans, it's always a rush.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h2>Peter Griffin, A Fan</h2>
-      <p>I enjoy the show, the music, the enviornment. It's all great.</p>
-    </div>
-	<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
-	<input name="skip_WhereToSend" type="hidden" value="samantharagoobeer@jamaicagateway.net" />
-	<input name="skip_SnapHostID" type="hidden" value="BMDEKQU7C3TS" />
-	<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
-	<input name="skip_Subject" type="hidden" value="Contact Us Form" />
-	<input name="skip_ShowUsersIp" type="hidden" value="1" />
-	<input name="skip_SendCopyToUser" type="hidden" value="1" />
-	<script type="text/javascript">
-	function ValidateForm(frm) {
-	if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
-	if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
-	if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
-	if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
-	if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
-	return true; }
-	function ReloadCaptchaImage(captchaImageId) {
-	var obj = document.getElementById(captchaImageId);
-	var src = '' + obj.src;
-	obj.src = '';
-	var date = new Date();
-	var pos = src.indexOf('&rad=');
-	if (pos >= 0) { src = src.substr(0, pos); }
-	obj.src = src + '&rad=' + date.getTime();
-	return false; }
-	</script>
-	<table border="0" cellpadding="5" cellspacing="0" width="600">
-	<tr>
-	<td><b>Name*:</b></td>
-	<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
-	</tr><tr>
-	<td><b>Phone number:</b></td>
-	<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
-	</tr><tr>
-	<td><b>Email address*:</b></td>
-	<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
-	</tr><tr>
-	<td><b>Comments and questions*:</b></td>
-	<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
-	</tr><tr>
-	<td colspan="2" align="center"> <br />
-	<table border="0" cellpadding="0" cellspacing="0">
-	<tr><td colspan="2" style="padding-bottom:18px;">
-	<!-- Please check our ProCaptcha service which is ad-free:
-	http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
-	<a href="http://www.snaphost.com/captcha/ReadyForms/SignUpForm.aspx" alt="sign up form template" title="sign up form template">
-	sign up form template</a></td></tr>
-	<tr valign="top"><td> <i>Enter web form code*:</i>
-	<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
-	</td><td>
-	<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
-	style="margin-left:20px;"
-	src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=BMDEKQU7C3TS&ImgType=2" /></a><br />
-	<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
-	</table> <br />
-	* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-	<input name="skip_Submit" type="submit" value="Submit" />
-	</td></tr>
-	</table><br />
-	</form>
-	
-  </div>
-</div>
-
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(40.7128, -74.0060);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:true, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
 }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeY8zqPN_N6-4kFfQfbpbllc0foTKMACU&callback=myMap"></script>
+button {  
+  margin: 20px;
+  padding: 10px;
+  height: 40px;
+  width: 150px;
+}
+input { 
+  font-size: 30px;
+}
+.fill {
+  background: #BF99F9;
+  color: rgb(24, 26, 142);
+  bborder-bottom: 2px black solid;
+  font-family: 'Lobster';
+  padding: 0 6px;
+  margin: 4px; 
+}
+</style>
+</head>
 
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
-</footer>
-
+<body>
+<div class="prompt"></div>
+<button>Next</button>
 <script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+// List of prompts for the user
+var prompts = [
+	'Type your name',
+	'Type an adjective',
+	'Type a noun',
+	'Type in your name',
+	'Type in noun pluralized',
+	'Type in your gender using her or his',
+	'Type in a friends name',
+	'Type in your name',
+	'Type in a location',
+	'Type the verb tense of your noun: For example, picking flowers, reading books, playing games, etc.',
+	'Enter gender of the you and your friends for example, the girls, the guys or even the two friends.',
+	' Enter an activity'
+   ];
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+	// if there is a next prompt
+	if (currentPrompt < prompts.length) {
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	} 
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		showFinal();
+	}
+}
 
-      // Store hash
-      var hash = this.hash;
+//puts user answers into HTML
+var showFinal = function() {
+  $('.prompt').html('This is the story of <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>. One day <span class="fill">'+answers[3]+'</span> who loved <span class="fill">'+answers[4]+'</span> decided to hang out with <span class="fill">'+answers[5]+'</span> friend.That day <span class="fill">'+answers[6]+'</span> and <span class="fill">'+answers[7]+'</span> were on their way to <span class="fill">'+answers[8]+'</span>. They wanted to be <span class="fill">'+answers[9]+'</span>. The <span class="fill">'+answers[10]+'</span> spent all day <span class="fill">'+answers[11]+'</span>. The End.');
+  //and the hide the button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
+// Show the first prompt as soon as js loads
+nextPrompt();
 </script>
 
 </body>
-</html>
-
-	
+</h1>
