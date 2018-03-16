@@ -63,6 +63,15 @@
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
+   .container {
+      padding: 20px 5px;
+    }
+    h3 {
+	   font-size: 20px;
+		}
+		form {
+			font-size: 12px;
+		}
   }
   .bg-1 {
       background: #2d2d30;
@@ -402,7 +411,7 @@
 	obj.src = src + '&rad=' + date.getTime();
 	return false; }
 	</script>
-	<table border="0" cellpadding="5" cellspacing="0" width="600">
+	<table border="0" cellpadding="5" cellspacing="0" max-width="600">
 	<tr>
 	<td><b>Name*:</b></td>
 	<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
@@ -414,7 +423,7 @@
 	<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
 	</tr><tr>
 	<td><b>Comments and questions*:</b></td>
-	<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+	<td><textarea name="Comments" rows="7" cols="35" style="width:350px;"></textarea></td>
 	</tr><tr>
 	<td colspan="2" align="center"> <br />
 	<table border="0" cellpadding="0" cellspacing="0">
